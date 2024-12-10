@@ -36,7 +36,7 @@ param openAiName string = ''
 param openAiConnectionName string = ''
 @description('The Open AI content safety connection name. If ommited will use a default value')
 param openAiContentSafetyConnectionName string = ''
-param keyVaultName string = ''
+param keyVaultName string = 'creative-swe'
 @description('The Azure Storage Account resource name. If ommited will be generated')
 param storageAccountName string = ''
 
