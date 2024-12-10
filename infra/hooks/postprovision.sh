@@ -39,8 +39,8 @@ echo "--- ✅ | 1. Post-provisioning - env configured ---"
 
 # Setup to run notebooks
 echo 'Installing dependencies from "requirements.txt"'
-python3 -m pip3 install -r src/api/requirements.txt 
-python3 -m pip3 install ipython ipykernel       # Install ipython and ipykernel
+python3 -m pip install -r src/api/requirements.txt 
+python3 -m pip install ipython ipykernel       # Install ipython and ipykernel
 ipython kernel install --name=python3 --user  # Configure the IPython kernel
 jupyter kernelspec list > /dev/null                      # Verify kernelspec list isn't empty
 echo "--- ✅ | 2. Post-provisioning - ready execute notebooks ---"
